@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greet User by Full Name</title>
+</head>
+<body>
+    <h1>CCO-118500 Muhammad Abdul Mustafa Qadri</h1>
+    <h1>Q1</h1>
+    <script>
+        
+        var firstName = prompt("Enter your first name:");
+
+        
+        var lastName = prompt("Enter your last name:");
+
+        
+        var fullName = firstName + " " + lastName;
+
+
+        alert("Hello, " + fullName + "! Welcome!");
+    </script>
+    <h1>Q2</h1>
+    <script>
+        // Ask the user for their favorite mobile phone model
+        var favoritePhoneModel = prompt("Enter your favorite mobile phone model:");
+
+        // Find the length of the user input
+        var inputLength = favoritePhoneModel.length;
+
+        // Display the result
+        document.write("<h2>The length of your favorite mobile phone model is: " + inputLength + "</h2>");
+    </script>
+    <h1>Q3</h1>
+    <script>
+        // Define the word
+        var word = "Pakistani";
+
+        // Find the index of the letter "n" in the word
+        var indexOfN = word.indexOf("n");
+
+        // Display the result
+        document.write("<h2>The index of the letter 'n' in the word 'Pakistani' is: " + indexOfN + "</h2>");
+    </script>
+    <h1>Q4</h1>
+    <script>
+        // Define the word
+        var word = "Hello World";
+
+        // Find the last index of the letter "l" in the word
+        var lastIndexOfL = word.lastIndexOf("l");
+
+        // Display the result
+        document.write("<h2>The last index of the letter 'l' in the word 'Hello World' is: " + lastIndexOfL + "</h2>");
+    </script>
+    <h1>Q5</h1>
+    <script>
+        // Define the word
+        var word = "Pakistani";
+
+        // Find the character at the 3rd index in the word
+        var characterAtThirdIndex = word.charAt(3);
+
+        // Display the result
+        document.write("<h2>The character at the 3rd index in the word 'Pakistani' is: " + characterAtThirdIndex + "</h2>");
+    </script>
+    <h1>Q6</h1>
+   
+    <script>
+        // Using string concat() method
+        // Ask the user for their first name
+        var firstName = prompt("Enter your first name:");
+
+        // Ask the user for their last name
+        var lastName = prompt("Enter your last name:");
+
+        // Concatenate the first and last names into a fullName variable using concat()
+        var fullName = "".concat(firstName, " ", lastName);
+
+        // Greet the user using their full name
+        alert("Hello, " + fullName + "! Welcome!");
+    </script>
+    <h1>Q7</h1>
+    <script>
+        // Define the word
+        var city = "Hyderabad";
+
+        // Replace "Hyder" with "Islam"
+        var modifiedCity = city.replace("Hyder", "Islam");
+
+        // Display the result
+        document.write("<h2>Original City: " + city + "</h2>");
+        document.write("<h2>Modified City: " + modifiedCity + "</h2>");
+    </script>
+    <h1>Q8</h1>
+    <script>
+        // Define the message
+        var message = "Ali and Sami are best friends. They play cricket and football together.";
+
+        // Replace all occurrences of "and" with "&"
+        var modifiedMessage = message.replace(/and/g, "&");
+
+        // Display the result
+        document.write("<h2>Original Message: " + message + "</h2>");
+        document.write("<h2>Modified Message: " + modifiedMessage + "</h2>");
+    </script>
+    <h1>Q9</h1>
+    <script>
+        // Define the string
+        var strNumber = "472";
+
+        // Convert the string to a number using parseInt()
+        var convertedNumber = parseInt(strNumber);
+
+        // Display the original and converted values and types
+        document.write("<h2>Original String: " + strNumber + "</h2>");
+        document.write("<h2>Converted Number: " + convertedNumber + "</h2>");
+        document.write("<p>Type of Original String: " + typeof strNumber + "</p>");
+        document.write("<p>Type of Converted Number: " + typeof convertedNumber + "</p>");
+    </script>
+    <h1>Q 10</h1>
+    <script>
+        // Ask the user for input
+        var userInput = prompt("Enter some text:");
+
+        // Convert the input to uppercase
+        var uppercaseText = userInput.toUpperCase();
+
+        // Display the result
+        document.write("<h2>Original Text: " + userInput + "</h2>");
+        document.write("<h2>Uppercase Text: " + uppercaseText + "</h2>");
+    </script>
+    <h1>Q 11</h1>
+    <script>
+        // Ask the user for input
+        var userInput = prompt("Enter some text:");
+
+        // Convert the input to title case
+        var titleCaseText = toTitleCase(userInput);
+
+        // Display the result
+        document.write("<h2>Original Text: " + userInput + "</h2>");
+        document.write("<h2>Title Case Text: " + titleCaseText + "</h2>");
+
+        // Function to convert text to title case
+        function toTitleCase(text) {
+            return text.toLowerCase().replace(/(?:^|\s)\w/g, function(match) {
+                return match.toUpperCase();
+            });
+        }
+    </script>
+    <h1>Q 12</h1>
+    <script>
+        
+        var num = 35.36;
+
+        // Convert num to a string and remove the dot
+        var numString = num.toString().replace(".", "");
+
+        // Display the result
+        document.write("<h2>Original Number: " + num + "</h2>");
+        document.write("<h2>Converted String without Dot: " + numString + "</h2>");
+    </script>
+    <h1>Q 13</h1>
+    <script>
+        // Ask the user for a username
+        var username = prompt("Enter your username:");
+
+        // Check if the username contains any special symbols
+        if (containsSpecialSymbols(username)) {
+            alert("Please enter a valid username without special symbols [@, ., , or !].");
+        } else {
+            alert("Username is valid: " + username);
+        }
+
+        // Function to check if a string contains special symbols
+        function containsSpecialSymbols(str) {
+            var specialSymbols = ['@', '.', ',', '!'];
+            for (var i = 0; i < specialSymbols.length; i++) {
+                if (str.includes(specialSymbols[i])) {
+                    return true;
+                }
+            }
+            return false;
+        }
+    </script>
+    <h1>Q 14</h1>
+    <script>
+        
+        var A = ["cake", "apple pie", "cookie", "chips", "patties"];
+
+        // Ask the user for input
+        var userInput = prompt("Enter an item to search:");
+
+        // Perform case-insensitive search
+        var found = false;
+        for (var i = 0; i < A.length; i++) {
+            if (A[i].toLowerCase() === userInput.toLowerCase()) {
+                found = true;
+                break;
+            }
+        }
+
+        // Display the result
+        if (found) {
+            alert("Yes! '" + userInput + "' is available in the list.");
+        } else {
+            alert("No! '" + userInput + "' is not found in the list.");
+        }
+    </script>
+    <h1>Q 15</h1>
+    <script>
+        // Ask the user for a password
+        var password = prompt("Enter your password:");
+
+        // Validate the password
+        if (isValidPassword(password)) {
+            alert("Password is valid!");
+        } else {
+            alert("Please enter a valid password that meets the requirements.");
+        }
+
+        // Function to validate the password
+        function isValidPassword(password) {
+            // Check if the password contains alphabets and numbers
+            var containsAlphabets = /[a-zA-Z]/.test(password);
+            var containsNumbers = /[0-9]/.test(password);
+
+            // Check if the password does not start with a number
+            var doesNotStartWithNumber = /^[^0-9]/.test(password);
+
+            // Check if the password is at least 6 characters long
+            var isAtLeastSixCharacters = password.length >= 6;
+
+            // Check all conditions
+            return containsAlphabets && containsNumbers && doesNotStartWithNumber && isAtLeastSixCharacters;
+        }
+    </script>
+    <h1>Q 16</h1>
+    <script>
+
+        var university = "University of Karachi";
+
+        // Convert the string to an array using split method
+        var universityArray = university.split(' ');
+
+        // Display the elements of the array
+        document.write("<h2>Original String: " + university + "</h2>");
+        document.write("<h2>Array Elements:</h2>");
+        document.write("<ul>");
+        for (var i = 0; i < universityArray.length; i++) {
+            document.write("<li>" + universityArray[i] + "</li>");
+        }
+        document.write("</ul>");
+    </script>
+    <h1> Q 17</h1>
+    <script>
+        // Ask the user for input
+        var userInput = prompt("Enter some text:");
+
+        // Display the last character of the user input
+        if (userInput.length > 0) {
+            var lastCharacter = userInput.charAt(userInput.length - 1);
+            alert("Last Character: " + lastCharacter);
+        } else {
+            alert("Input is empty. Please enter some text.");
+        }
+    </script>
+    <h1>Q 18</h1>
+    <script>
+        
+        var sentence = "The quick brown fox jumps over the lazy dog";
+
+        // Count the occurrences of the word "the" (case-insensitive)
+        var wordToCount = "the";
+        var occurrences = countWordOccurrences(sentence, wordToCount);
+
+        // Display the result
+        document.write("<h2>Original Sentence: " + sentence + "</h2>");
+        document.write("<h2>Number of occurrences of the word '" + wordToCount + "': " + occurrences + "</h2>");
+
+        // Function to count occurrences of a word in a string (case-insensitive)
+        function countWordOccurrences(str, word) {
+            var regex = new RegExp("\\b" + word + "\\b", "gi");
+            var matches = str.match(regex);
+            return matches ? matches.length : 0;
+        }
+    </script>
+
+</body>
+</html>
